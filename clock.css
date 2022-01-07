@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    background: radial-gradient(rgba(204,209,228,1), rgba(47,58,143,1));
+    font-family: Montserrat;
+    height: 100vh;
+}
+.dark-green{
+    /*background-color: #BCBCB5;*/
+    background-color: #E1BD8E;
+    width: 50vw;
+    height: 50vh;
+}
+.light-green{
+    /*background-color: #E1BD8E;*/
+    background-color: #BCBCB5;
+    width: 50vw;
+    height: 50vh;
+}
+.white{
+    background-color: #92B7C0;
+    width: 50vw;
+    height: 50vh;
+}
+.brown{
+    background-color: #BF8965;
+    width: 50vw;
+    height: 50vh;
+}
+.top{
+    display: flex;
+}
+.clock-ui{
+    position: absolute;
+    top: 21%;
+    left: 37%;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    height: 400px;
+}
+.digital-clock-ui{
+    display: flex;
+    flex-direction: column;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 65%;
+    left:3%;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    padding: 20px;
+    display: flex;
+    color: white;
+    font-size: 20px;
+}
+.time{
+    padding: 10px;
+    display: flex;
+    color: white;
+    font-size: 25px;
+}
+.date-content{
+    font-size: 25px;
+}
+#hour,#minute,#second{
+    padding: 0 20px 0 20px;
+}
+#date,#month,#year{
+    padding: 0 10px 0 10px;
+}
+.hand{
+    transform: rotateZ(90deg);
+    width: 100px;
+    height: 4px;
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    transform-origin: 100%;
+    transition: all 200ms;
+}
+.hour-hand{
+    width: 50px;
+    height: 4px;
+    top: 185px;
+    left: 140px;
+}
+.minute-hand{
+    width: 80px;
+    height: 4px;
+    top: 190px;
+    left: 109.9px;
+}
+.second-hand{
+    width: 130px;
+    height: 4px;
+    left: 60px;
+    top: 188px;
+}
+.circle{
+    position: absolute;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 48%;
+    left: 192.5px;
+
+}
