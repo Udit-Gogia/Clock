@@ -40,6 +40,7 @@ body{
     width: 400px;
     height: 400px;
 }
+
 .digital-clock-ui{
     display: flex;
     flex-direction: column;
@@ -77,43 +78,39 @@ body{
     padding: 0 10px 0 10px;
 }
 .hand{
-    transform: rotateZ(90deg);
+    position: absolute;
+    transform: rotateZ(180deg);
     width: 100px;
     height: 4px;
     background-color: black;
     border-radius: 10px;
     margin: 10px;
-    position: absolute;
-    top: 190px;
-    left: 50px;
     transform-origin: 100%;
     transition: all 200ms;
+    top: 187px;
 }
-.hour-hand{
+.hour-hand {
     width: 50px;
     height: 4px;
-    top: 185px;
     left: 140px;
 }
+
 .minute-hand{
     width: 80px;
     height: 4px;
-    top: 190px;
-    left: 109.9px;
+    left: 110px;
 }
 .second-hand{
     width: 130px;
     height: 4px;
     left: 60px;
-    top: 188px;
 }
 .circle{
     position: absolute;
     background-color: black;
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    top: 48%;
-    left: 192.5px;
-
+    left: 190px;
+    top: 190px;
 }

@@ -8,10 +8,11 @@ function setDate(){
     var day = date.getDay();
     var month = date.getMonth();
     var year = date.getFullYear();
-
-    console.log(day);
     var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
     var months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+    const SecondsDegree = 6 * Seconds + 90;
+    const MinuteDegree = 6 * Minutes + 90;
+    const HourDegree = 30 * Hours + Minutes/2 + 90;
 
 document.getElementById('hour').innerHTML = Hours;
 document.getElementById('minute').innerHTML = Minutes;
@@ -20,14 +21,15 @@ document.getElementById('day').innerHTML = days[day-1];
 document.getElementById('date').innerHTML = DATE;
 document.getElementById('month').innerHTML = months[month];
 document.getElementById('year').innerHTML = year;
+document.getElementById('second-hand').style.transform = `rotate(${SecondsDegree}deg)`;
+document.getElementById('minute-hand').style.transform = `rotate(${MinuteDegree}deg)`;
+document.getElementById('hour-hand').style.transform = `rotate(${HourDegree}deg)`;
 
-    // console.log(datee);
-    // console.log(month);
-    // console.log(year);
-    // console.log(Hours);
-    // console.log(Minutes);
-    // console.log(Seconds);
+console.log(SecondsDegree);
+
+
 
 }
 
 setInterval(setDate,1000);
+
