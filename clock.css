@@ -4,53 +4,27 @@ body{
     font-family: Montserrat;
     height: 100vh;
 }
-.dark-green{
-    /*background-color: #BCBCB5;*/
-    background-color: #E1BD8E;
-    width: 50vw;
-    height: 50vh;
-}
-.light-green{
-    /*background-color: #E1BD8E;*/
-    background-color: #BCBCB5;
-    width: 50vw;
-    height: 50vh;
-}
-.white{
-    background-color: #92B7C0;
-    width: 50vw;
-    height: 50vh;
-}
-.brown{
-    background-color: #BF8965;
-    width: 50vw;
-    height: 50vh;
-}
-.top{
-    display: flex;
-}
+
 .clock-ui{
-    position: absolute;
     top: 21%;
     left: 37%;
-    background: rgba( 255, 255, 255, 0.25 );
     backdrop-filter: blur(10px);
     border-radius: 50%;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 400px;
     height: 400px;
 }
+.clock-ui,.digital-clock-ui{
+    position: absolute;
+    width: 400px;
+    background: rgba( 255, 255, 255, 0.25 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
+}
 .digital-clock-ui{
     display: flex;
     flex-direction: column;
-    background: rgba( 255, 255, 255, 0.25 );
     backdrop-filter: blur(5px);
     border-radius: 20px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    width: 400px;
     height: 200px;
-    position: absolute;
     top: 65%;
     left:3%;
     justify-content: center;
@@ -58,24 +32,23 @@ body{
 }
 .info{
     padding: 20px;
-    display: flex;
-    color: white;
     font-size: 20px;
 }
 .time{
     padding: 10px;
+}
+.time,.info{
     display: flex;
     color: white;
-    font-size: 25px;
 }
-.date-content{
+.date-content,.time{
     font-size: 25px;
 }
 #hour,#minute,#second{
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 #date,#month,#year{
-    padding: 0 10px 0 10px;
+    padding: 0 10px;
 }
 .hand{
     position: absolute;
@@ -91,14 +64,14 @@ body{
 }
 .hour-hand {
     width: 50px;
-    height: 4px;
+    height: 8px;
     left: 140px;
 }
 
 .minute-hand{
-    width: 80px;
-    height: 4px;
-    left: 110px;
+    width: 90px;
+    height: 6px;
+    left: 100px;
 }
 .second-hand{
     width: 130px;

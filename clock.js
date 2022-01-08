@@ -14,6 +14,10 @@ function setDate(){
     const MinuteDegree = 6 * Minutes + 90;
     const HourDegree = 30 * Hours + Minutes/2 + 90;
 
+    Hours = Hours<10? '0'+Hours : Hours;
+    Minutes = Minutes<10? '0'+Minutes : Minutes;
+    Seconds = Seconds<10? '0'+Seconds : Seconds;
+
 document.getElementById('hour').innerHTML = Hours;
 document.getElementById('minute').innerHTML = Minutes;
 document.getElementById('second').innerHTML = Seconds;
